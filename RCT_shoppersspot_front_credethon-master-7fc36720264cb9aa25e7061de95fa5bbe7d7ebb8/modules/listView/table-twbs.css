@@ -1,0 +1,73 @@
+.table th {
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.table .empty-cell {
+  font-style: italic;
+  color: darkgray;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sort-icon:after {
+  /* float: right; */
+  color: hsl(20, 0%, 70%);
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sort-icon.sort-ascending:after  { content: '\f0de'; }
+.sort-icon.sort-descending:after { content: '\f0dd'; }
+.sort-icon.sort-none:after  { content: '\f0dc'; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+#students {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#students td, #students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;}
+
+#students tr:hover {background-color: #ddd;}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
